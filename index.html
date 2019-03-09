@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E X - D O C</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Kanit:300&subset=thai');
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+		body {
+			font-family: 'Roboto', sans-serif;
+			margin:0;
+			background-color: #eaeaea;
+	        -webkit-font-smoothing: antialiased;
+	        -moz-osx-font-smoothing: grayscale;
+	        background: url("bg.jpg") no-repeat center center fixed;
+	        -webkit-background-size: cover;
+	        -moz-background-size: cover;
+            -o-background-size: cover;
+            -ms-background-size: cover;
+            background-size: cover;
+
+		}
+	
+		.topnav {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+		.topnav ul{
+			list-style-type: none;
+    		margin: 0;
+   		 	padding: 0;
+    		overflow: hidden;
+    		background-color: #ff8f4f;
+    		position: fixed;
+    		top: 0;
+    		width: 100%;
+		}
+		.topnav li{
+			float: right;
+		}
+		.topnav a {
+		  list-style-type: none;
+		  float: left;
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		.topnav a:hover {
+		  background-color: #db7b43;
+		}
+
+		.topnav a.active {
+		    background-color: #ff6326;
+		}
+
+		.description{
+			padding:20px;
+			margin-top:100px;
+			text-align:center;
+			font-family:'Kanit',sans-serif;
+			width:55%;
+			color:white;
+			font-size:20px;
+
+		}
+		.regis a{
+			font-family:'Kanit',sans-serif;
+			color:white;
+			text-decoration: none;
+			border:3px solid white;
+			text-align:center;
+			width:200px;
+			height:80px;
+			font-size :50px;
+			
+		}
+
+	</style>
+	
+</head>
+
+<body>
+	<div class="topnav">
+          <ul>
+          	<li style="float: left;"><a href="index.html">E X — D O C</a></li>
+            <?php  if ($_SESSION['UserID'] !="") { ?>
+        		<li><a href="myprofile.php">My Profile</a></li>
+            <?php } else{ ?>
+        		<li><a href="login.php">Login</a></li>
+            <?php } ?>
+            <li><a href="#market">Market</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
+    </div>
+
+	
+	<center><div class="description">
+		<h1>"ชีทเก่าที่ไม่ใช้แล้ว นำมาขายได้เลยที่ EX-DOC !"</h1>
+		<p><b>EX-DOC</b> เป็นเว็บไซต์ที่ให้บริการพื้นที่สำหรับซื้อ ขาย แลกเปลี่ยนเอกสารประกอบการเรียนทุกวิชา สำหรับนักศึกษาสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบังโดยเฉพาะ สามารถใช้งานได้ฟรี
+		เพื่อให้นักศึกษามีโอกาสซื้อเอกสารประกอบการเรียนได้ในราคาที่ถูกลง ช่วยให้นักศึกษามีรายได้จากการนำเอกสารประกอบการเรียนมาประกาศขายในเว็บไซต์ และยังช่วยในการใช้ทรัพยากรกระดาษได้อย่างคุ้มค่าอีกด้วย</p>
+	</div></center>
+
+	<div class="regis">
+		<center>
+			<a href="register.php">&nbsp;Register&nbsp;</a>
+		</center>
+	</div>
+	<br>
+</body>
+</html>
